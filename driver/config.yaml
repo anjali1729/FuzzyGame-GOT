@@ -1,0 +1,57 @@
+###############################################################################
+# YAML file for configuration - a.k.a game settings
+# changes to characters - goblin -> ninja, ogre -> samurai, troll -> mage
+###############################################################################
+army:
+  goblin_army: 5
+  ogre_army: 5
+  troll_army: 5
+  mountain:
+    sprite: "/images/mountain.png"
+  forest:
+    sprite: "/images/forest.png"
+  goblin:
+    up_sprite: "/images/goblin_up.png"
+    left_sprite: "/images/goblin_left.png"
+    right_sprite: "/images/goblin_right.png"
+    down_sprite: "/images/goblin_down.png"
+    attack_sprite: "/images/attack_goblin.png"
+    scan_range: 9
+    max_charge: 2
+    start_position: "bottom"
+    fuzzy_roam: 1
+    attack: low  # low, medium, high
+    speed: fast  # fast, medium, slow
+  ogre:
+    up_sprite: "/images/ogre_up.png"
+    left_sprite: "/images/ogre_left.png"
+    right_sprite: "/images/ogre_right.png"
+    down_sprite: "/images/ogre_down.png"
+    attack_sprite: "/images/attack_ogre.png"
+    scan_range: 3
+    max_charge: 4
+    start_position: "top"
+    attack: medium
+    speed: medium
+  troll:
+    up_sprite: "/images/troll_up.png"
+    left_sprite: "/images/troll_left.png"
+    right_sprite: "/images/troll_right.png"
+    down_sprite: "/images/troll_down.png"
+    attack_sprite: "/images/attack_troll.png"
+    scan_range: 5
+    max_charge: 5
+    start_position: "middle"
+    attack: high
+    speed: slow
+
+game_configs:
+  frame_rate: 10
+  windowWidth: 1000
+  windowHeight: 1000
+  sprite_width: 60
+  sprite_height: 60
+  seconds: 180
+  forest_radius: 4
+  war: 0
+  radar: 1
